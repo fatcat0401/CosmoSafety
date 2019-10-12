@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1090779507396",
+    "firebase_url": "https://cosmosafety-361c4.firebaseio.com",
+    "project_id": "cosmosafety-361c4",
+    "storage_bucket": "cosmosafety-361c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090779507396:android:6ed704f6c9292d72",
+        "android_client_info": {
+          "package_name": "com.example.cosmosafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090779507396-2te4peve735gva4t455akp5ou6nvj2ia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cosmosafety",
+            "certificate_hash": "6acdac3eb825a4cb21beed74ee261fc85fdc3e32"
+          }
+        },
+        {
+          "client_id": "1090779507396-8ot8094of4q17kvn3l25tbqgpnqg1n1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTJqVb6XM2pge3zm5YphvLpJmGpJ71LDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090779507396-8ot8094of4q17kvn3l25tbqgpnqg1n1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context=".ChemicalFilterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_cfa"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_fa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Chemicals Filter"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <ImageView
+       android:id="@+id/logo_cfa"
+       android:layout_width="250dp"
+       android:layout_height="250dp"
+       android:layout_below="@+id/app_bar_cfa"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/warning"/>
+
+    <TextView
+        android:id="@+id/tv1_cfa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_cfa"
+        android:text="Select Chemicals You Want to Avoid"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/tv1_cfa"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbox1_cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="ANILINE"
+
+                />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbox2_cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THIOACETAMIDE"
+                android:layout_marginLeft="100dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbox3_cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THIOUREA"
+                android:layout_marginLeft="50dp"
+                />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbox4_cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DICHLORVOS"
+                android:layout_marginLeft="85dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbox5_cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARBARYL"
+                android:layout_marginLeft="50dp"
+
+                />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbox6_cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FORMIC ACID"
+                android:layout_marginLeft="80dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/toProduct_btn_cfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="See All Products"/>
+
+</RelativeLayout>

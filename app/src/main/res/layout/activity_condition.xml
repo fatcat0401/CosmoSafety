@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConditionActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="249dp"
+        android:layout_height="151dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/applogo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select your age range:"
+        android:id="@+id/tv1"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/input_design"
+        android:id="@+id/AgeRangeSpn">
+
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select your condition: "
+        android:layout_below="@+id/AgeRangeSpn"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv2"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/input_design"
+        android:id="@+id/ConditionSpn">
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toCategoryBtn"
+        android:layout_below="@+id/ConditionSpn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Find Products"
+        />
+
+
+</RelativeLayout>

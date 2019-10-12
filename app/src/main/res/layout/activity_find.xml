@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context=".FindActivity">
+
+    <Button
+        android:id="@+id/toHome_btn_fa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Back to Home"/>
+
+    <RelativeLayout
+        android:id="@+id/title_rl_fa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:text="Search Product"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/logo_fa"
+        android:layout_width="249dp"
+        android:layout_height="151dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title_rl_fa"
+        android:src="@drawable/applogo" />
+
+    <LinearLayout
+        android:id="@+id/ll_fa"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/logo_fa"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:layout_marginLeft="5dp"
+        >
+
+        <Button
+            android:id="@+id/search_btn_fa"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Search For Product Name"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/search"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/product_categories_fa"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/ll_fa"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:text="Product Categories"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cosmetics_used"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chemical_filter_fa"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/product_categories_fa"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:text="Filter Chemicals"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/suggested"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

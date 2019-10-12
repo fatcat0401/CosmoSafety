@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductRatingActivity">
+
+    <RatingBar
+        android:id="@+id/rating_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:progressTint="#4597cf"
+        android:stepSize="1"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/value_rating"
+        android:layout_below="@+id/rating_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:text = "Rating value"/>
+
+    <TextView
+        android:id="@+id/productName_rating"
+        android:layout_below="@+id/value_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text = "Product Name"/>
+
+    <TextView
+        android:id="@+id/productCompany_rating"
+        android:layout_below="@+id/productName_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text = "Company"/>
+
+    <TextView
+        android:id="@+id/category_rating"
+        android:layout_below="@+id/productCompany_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text = "Category"/>
+
+    <Button
+        android:id="@+id/btn_finish_rating"
+        android:layout_below="@+id/category_rating"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish Rating"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
